@@ -1,0 +1,29 @@
+.destination-card {
+    border: 2px solid transparent; 
+    transition: border-color 0.3s ease;
+  }
+  
+  .highlighted-outline {
+    border-radius: 8px; 
+  }
+  
+  .destination-card:hover {
+    border-color: #007bff; 
+  }
+  
+  .destination-cards {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+  
+  .destination-card {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+  }
+
+  .highlighted-outline {
+    outline: 2px solid blue; 
+  }
+  
+  
