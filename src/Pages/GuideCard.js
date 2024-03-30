@@ -1,4 +1,5 @@
 import React from 'react';
+import '../components/GuideCard.css';
 
 const GuideCard = ({ guide, onSelect, isSelected }) => {
 
@@ -8,7 +9,7 @@ const GuideCard = ({ guide, onSelect, isSelected }) => {
 
   return (
     <div className={`guide-card ${isSelected ? 'selected' : ''}`} onClick={() => onSelect(guide)}>
-      <img src={guide.photoUrl} alt={guide.name} />
+      <img src={guide.imgUrl} alt={guide.name} className='profile'></img>
       <div className="content-box">
         <h3>{guide.name}</h3>
         <p>Age: {guide.age}</p>

@@ -1,80 +1,74 @@
-.destination{
-    margin:4rem 6rem;
+.destination {
+    margin: 4rem 6rem;
 }
-.destination h1{
+
+.destination h1 {
     font-family: 3rem;
 }
 
-.first-des{
+.first-des, .first-des-reverse {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4.5rem;
 }
-.first-des-reverse{
-    display: flex;
+
+.first-des-reverse {
     flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4.5rem;
 }
-.des-text{
-    width:45%;
-    text-align: start;
+
+.des-text {
+    width: 45%;
+    text-align: center;
     font-size: 1.1rem;
 }
-.des-text h2{
-    padding-bottom:1rem;
+
+.des-text h2 {
+    padding-bottom: 1rem;
 }
-.image{
-    position:relative;
-    width:50%;
-    display:flex;
+
+.image {
+    position: relative;
+    display: flex;
     justify-content: space-between;
     z-index: -99;
+    width: 85%;
+    padding-top: 50px;
 }
-.image img{
-    width:49%;
-    height: 350px;
-    object-fit:cover;
-    border-radius:6px;
-    box-shadow: -1px 1px 62px -18px rgba(0,0,0,0.19);
+
+.image img {
+    border-radius: 6px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
 }
-.image img:nth-child(2){
-    position:absolute;
-    top:-10%;
-    right:0;
-}
-.about-us{
+
+
+.about-us {
     color: aliceblue;
 }
-@media screen and (max-width:850px){
-    .destination{
-        margin:4rem 2rem;
+
+@media screen and (max-width: 850px) {
+    .destination {
+        margin: 4rem 2rem;
     }
-    .first-des{
-        display:flex;
+
+    .first-des, .first-des-reverse {
+        display: flex;
         flex-direction: column-reverse;
-        /* align-items: center;
-        justify-content:space-between; */
         margin-top: 2.5rem;
     }
-    .first-des-reverse{
-        display:flex;
-        flex-direction: column-reverse;
-        /* align-items: center;
-        justify-content:space-between; */
-        margin-top: 4.5rem;
-    }
-    
-    .des-text{
-        width:100%;
-    }
-    .image{
-        width:100%;
-        margin:1.8rem 0;
-    }
-    .image img{
-        height:250px;
-    }
+}
+.image-text{
+  color: azure;
+  position: relative;
+  font-size: 18px; 
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.first-des, .des-text{
+    width: 100%;
+}
+.image-container{
+    width: 75%;
 }

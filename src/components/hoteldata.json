@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-
-const hotelsData = [
+{
+    "hotels": [
       {
         "hotel_name": "Royal Palace Hotel",
         "description": "Luxurious hotel offering premium accommodation with stunning views of the city.",
@@ -131,50 +130,6 @@ const hotelsData = [
           "website": "www.punebusinesstower.com"
         }
       }
-];
-
-function Hotel() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [searchResults, setSearchResults] = useState([]);
-
-  const handleChange = event => {
-    setSearchTerm(event.target.value);
-  };
-
+    ]
+  }
   
-  React.useEffect(() => {
-    const results = hotelsData.filter(hotel =>
-      hotel.hotel_name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setSearchResults(results);
-  }, [searchTerm]);
-
-  return (
-    <div className="App">
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Search hotels..."
-          value={searchTerm}
-          onChange={handleChange}
-        />
-        <i className="fas fa-search"></i> {/* You can replace this with your preferred search icon */}
-      </div>
-      <div className="hotel-list">
-        {searchResults.map((hotel, index) => (
-          <div key={index} className="hotel">
-            <h2>{hotel.hotel_name}</h2>
-            <p>{hotel.description}</p>
-            <p>Location: {hotel.location}</p>
-            <p>Price per night: {hotel.price_per_night}</p>
-            <p>Contact: {hotel.contact_info.phone}</p>
-            <p>Email: {hotel.contact_info.email}</p>
-            <p>Website: {hotel.contact_info.website}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-export default Hotel;

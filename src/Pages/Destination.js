@@ -11,28 +11,76 @@ import hawal from './image/hawal.png';
 import memorial from './image/memorial.png';
 import sarabati from './image/sarabati.png';
 import wada from './image/wada.png';
+import man from './image/male.png'
+import woman from './image/women.jpg'
 
 const cities = ['Mumbai', 'Delhi', 'Kolkata', 'Chennai', 'Bangalore', 'Hyderabad', 'Jaipur', 'Ahmedabad', 'Kolkata', 'Mumbai', 'Pune', 'Lucknow'];
 
 
 const mumbaiGuides = [
-  { name: 'Ravi Patel', age: 30, specialisation: 'Cuisine', availableSlots: 8 },
-  { name: 'Priya Sharma', age: 40, specialisation: 'History', availableSlots: 5 },
-  { name: 'Aarav Singh', age: 35, specialisation: 'Art', availableSlots: 10 }
+  { 
+    name: 'Ravi Patel',
+    age: 30, specialisation: 'Cuisine',
+    availableSlots: 8,
+    imgUrl: man
+  },
+  { name: 'Priya Sharma', 
+  age: 40, 
+  specialisation: 'History',
+  availableSlots: 5, 
+  imgUrl: woman 
+  },
+  { 
+    name: 'Aarav Singh', 
+    age: 35, specialisation: 'Art', 
+    availableSlots: 10,
+    imgUrl: man
+  }
 ];
 
 // Guides data for Delhi
 const delhiGuides = [
-  { name: 'Sunita Desai', age: 28, specialisation: 'Wildlife', availableSlots: 6 },
-  { name: 'Rahul Mehta', age: 35, specialisation: 'Architecture', availableSlots: 4 },
-  { name: 'Ananya Gupta', age: 32, specialisation: 'Culture', availableSlots: 7 }
+  {
+     name: 'Sunita Desai', 
+     age: 28, specialisation: 'Wildlife', 
+     availableSlots: 6, 
+     imgUrl: woman
+  },
+  {
+    name: 'Rahul Mehta',
+    age: 35, specialisation: 'Architecture', 
+    availableSlots: 4, 
+    imgUrl: man 
+  },
+  { 
+    name: 'Ananya Gupta',
+    age: 32, specialisation: 'Culture', 
+    availableSlots: 7, 
+    imgUrl: woman 
+  }
 ];
 
 // Guides data for Kolkata
 const kolkataGuides = [
-  { name: 'Vikram Singhania', age: 38, specialisation: 'Adventure', availableSlots: 3 },
-  { name: 'Deepika Reddy', age: 31, specialisation: 'Spiritual', availableSlots: 9 },
-  { name: 'Rajiv Kapoor', age: 45, specialisation: 'Photography', availableSlots: 2 }
+  {
+    name: 'Vikram Singhania', 
+    age: 38, specialisation: 'Adventure', 
+    availableSlots: 3,
+    imgUrl: man 
+  },
+  { 
+    name: 'Deepika Reddy', 
+    age: 31, specialisation: 'Spiritual', 
+    availableSlots: 9,
+    imgUrl: woman 
+  },
+  { 
+    name: 'Rajiv Kapoor',
+    age: 45,
+    specialisation: 'Photography', 
+    availableSlots: 2,
+    imgUrl: woman 
+  }
 ];
 
 const ChennaiGuides = [
@@ -40,19 +88,22 @@ const ChennaiGuides = [
         name: "Arjun Menon",
         age: 33,
         specialisation: "Architecture",
-        availableSlots: 6
+        availableSlots: 6, 
+        imgUrl: man
       },
       {
         name: "Neha Rajput",
         age: 29,
         specialisation: "History",
-        availableSlots: 8
+        availableSlots: 8,
+        imgUrl: woman
       },
       {
         name: "Karthik Reddy",
         age: 34,
         specialisation: "Cuisine",
-        availableSlots: 5
+        availableSlots: 5,
+        imgUrl: man
       }
 
 ];
@@ -62,19 +113,22 @@ const BangaloreGuides = [
         name: "Sandeep Rao",
         age: 34,
         specialisation: "Art",
-        availableSlots: 7
+        availableSlots: 7,
+        imgUrl: man
       },
       {
         name: "Shreya Reddy",
         age: 27,
         specialisation: "Adventure",
-        availableSlots: 9
+        availableSlots: 9,
+        imgUrl: woman
       },
       {
         name: "Rohan Sharma",
         age: 42,
         specialisation: "Culture",
-        availableSlots: 4
+        availableSlots: 4,
+        imgUrl: man
       }
 
 
@@ -85,19 +139,22 @@ const HyderabadGuides = [
         name: "Amit Kumar",
         age: 31,
         specialisation: "Heritage",
-        availableSlots: 5
+        availableSlots: 5,
+        imgUrl: man
       },
       {
         name: "Neha Singh",
         age: 36,
         specialisation: "Food",
-        availableSlots: 6
+        availableSlots: 6,
+        imgUrl: woman
       },
       {
         name: "Varun Reddy",
         age: 29,
         specialisation: "Adventure",
-        availableSlots: 8
+        availableSlots: 8,
+        imgUrl: man
       }
 ];
 
@@ -106,19 +163,22 @@ const JaipurGuides = [
         name: "Rajat Sharma",
         age: 37,
         specialisation: "Architecture",
-        availableSlots: 4
+        availableSlots: 4,
+        imgUrl: man
       },
       {
         name: "Pooja Verma",
         age: 33,
         specialisation: "Culture",
-        availableSlots: 7
+        availableSlots: 7,
+        imgUrl: woman
       },
       {
         name: "Vikas Singh",
         age: 28,
         specialisation: "History",
-        availableSlots: 5
+        availableSlots: 5,
+        imgUrl: man
       }
 ];
 
@@ -127,19 +187,22 @@ const AhmedabadGuides = [
         name: "Manoj Patel",
         age: 30,
         specialisation: "Art",
-        availableSlots: 6
+        availableSlots: 6,
+        imgUrl: man
       },
       {
         name: "Sneha Shah",
         age: 35,
         specialisation: "Cuisine",
-        availableSlots: 8
+        availableSlots: 8,
+        imgUrl: woman
       },
       {
         name: "Rajesh Mehta",
         age: 32,
         specialisation: "History",
-        availableSlots: 7
+        availableSlots: 7,
+        imgUrl: man
       }
 ];
 const PuneGuides = [
@@ -147,19 +210,22 @@ const PuneGuides = [
         name: "Prakash Deshmukh",
         age: 38,
         specialisation: "Adventure",
-        availableSlots: 3
+        availableSlots: 3,
+        imgUrl: man
       },
       {
         name: "Kavita Joshi",
         age: 31,
         specialisation: "Spiritual",
-        availableSlots: 9
+        availableSlots: 9,
+        imgUrl: woman
       },
       {
         name: "Amit Kumar",
         age: 45,
         specialisation: "Photography",
-        availableSlots: 2
+        availableSlots: 2,
+        imgUrl: man
       }
 ];
 const LucknowGuides = [
@@ -167,19 +233,22 @@ const LucknowGuides = [
         name: "Suresh Tiwari",
         age: 36,
         specialisation: "History",
-        availableSlots: 5
+        availableSlots: 5,
+        imgUrl: man
       },
       {
         name: "Anita Singh",
         age: 29,
         specialisation: "Cuisine",
-        availableSlots: 7
+        availableSlots: 7,
+        imgUrl: woman
       },
       {
         name: "Vikram Singh",
         age: 34,
         specialisation: "Art",
-        availableSlots: 4
+        availableSlots: 4,
+        imgUrl: man
       }
 ];
 const destinationData = [

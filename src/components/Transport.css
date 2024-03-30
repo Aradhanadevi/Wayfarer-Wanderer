@@ -1,0 +1,25 @@
+.main-container {
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .travel-block {
+    width: 50%; 
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #120b0b;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .travel-medium {
+    margin-bottom: 10px;
+  }
+  
+  .travel-info {
+    margin-top: 10px;
+  }
+  

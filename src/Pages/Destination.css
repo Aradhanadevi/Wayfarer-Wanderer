@@ -1,5 +1,3 @@
-/* App.css */
-
 body {
     margin: 0;
     padding: 0;
@@ -19,33 +17,33 @@ body {
   h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #fff; /* Change text color to white */
+    color: #fff; 
   }
   
-  /* App.css */
   
   .destination-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Gap between cards */
-    width: 100%; /* Ensure the container takes full width */
-    max-width: 1200px; /* Set a maximum width to prevent excessive spreading */
-    margin: 0 auto; /* Center the container */
+    gap: 20px; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
   }
   
   .destination-card {
-    width: 50%; /* Set width to cover half the container minus gap */
-    margin: 10px; /* Adjust margin */
+    width: 50%; 
+    flex-wrap: wrap;
+    margin: 10px; 
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
   }
   
   .destination-card img {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
     border-radius: 10px;
   }
   
@@ -57,11 +55,11 @@ body {
   .destination-info h3 {
     font-size: 24px;
     margin-bottom: 5px;
-    color: #333; /* Change text color to black */
+    color: #333; 
   }
   
   .destination-info p {
-    color: #555; /* Change text color to a darker shade */
+    color: #555; 
   }
   
   .destination-info p:last-child {
@@ -70,7 +68,7 @@ body {
   
   label {
     font-size: 18px;
-    color: #fff; /* Change label color to white */
+    color: #fff; 
   }
   
   #citySelect {
@@ -90,9 +88,9 @@ body {
     width: 200px;
     margin: 10px;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.8); 
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
   }
   
   .guide-box:hover {
@@ -107,19 +105,19 @@ body {
   .guide-box h4 {
     font-size: 20px;
     margin: 10px 0;
-    color: #333; /* Change text color to black */
+    color: #333; 
   }
   
   .guide-box p {
-    color: #555; /* Change text color to a darker shade */
+    color: #555; 
   }
   
   .selected {
-    border: 2px solid #007bff; /* Blue border for selected guide */
+    border: 2px solid #007bff; 
   }
   
   .selected:hover {
-    border: 2px solid #007bff; /* Maintain blue border on hover */
+    border: 2px solid #007bff; 
   }
   
   .App {
@@ -150,14 +148,13 @@ body {
     max-width: 100%;
     height: auto;
   }
-  /* App.css */
-  
+
   .introduction {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
   }
   
   .introduction h1 {
