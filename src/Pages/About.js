@@ -1,8 +1,7 @@
 import React from 'react'
 import img0 from '../Assets/about.jpg'
 import Hero from '../components/Hero'
-
-import Homedata from '../components/Homedata';
+import Homedata from '../components/About';
 function About() {
   return (
    <>

@@ -1,0 +1,173 @@
+/* App.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../Pages//image/img7.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .Destination {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff; /* Change text color to white */
+  }
+  
+  /* App.css */
+  
+  .destination-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Gap between cards */
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 1200px; /* Set a maximum width to prevent excessive spreading */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .destination-card {
+    width: 50%; /* Set width to cover half the container minus gap */
+    margin: 10px; /* Adjust margin */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  .destination-card img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+  }
+  
+  
+  .destination-info {
+    margin-top: 10px;
+  }
+  
+  .destination-info h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333; /* Change text color to black */
+  }
+  
+  .destination-info p {
+    color: #555; /* Change text color to a darker shade */
+  }
+  
+  .destination-info p:last-child {
+    margin-top: 5px;
+  }
+  
+  label {
+    font-size: 18px;
+    color: #fff; /* Change label color to white */
+  }
+  
+  #citySelect {
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  
+  .guide-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .guide-box {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  .guide-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .guide-box img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .guide-box h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333; /* Change text color to black */
+  }
+  
+  .guide-box p {
+    color: #555; /* Change text color to a darker shade */
+  }
+  
+  .selected {
+    border: 2px solid #007bff; /* Blue border for selected guide */
+  }
+  
+  .selected:hover {
+    border: 2px solid #007bff; /* Maintain blue border on hover */
+  }
+  
+  .App {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  
+  .guide-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .guide-content {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .guide-image {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .guide-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* App.css */
+  
+  .introduction {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  .introduction h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333; 
+  }
+  
+  .introduction p {
+    font-size: 18px;
+    color: #555;
+  }
+  
