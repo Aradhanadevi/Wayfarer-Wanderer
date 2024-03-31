@@ -1,4 +1,15 @@
 import React, { useState } from 'react';
+import '../components/Hotel.css'
+import hotel9 from '../Assets/hotel9.jpg'
+import hotel10 from '../Assets/hotel10.jpg'
+import hotel11 from '../Assets/hotel11.jpg'
+import hotel12 from '../Assets/hotel12.jpg'
+import hotel13 from '../Assets/hotel13.jpg'
+import hotel14 from '../Assets/hotel14.jpg'
+import hotel15 from '../Assets/hotel15.jpg'
+import hotel16 from '../Assets/hotel16.jpg'
+import hotel17 from '../Assets/hotel17.jpg'
+import hotel18 from '../Assets/hotel18.jpg'
 
 const hotelsData = [
       {
@@ -11,7 +22,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@royalpalacehotel.com",
-          "website": "www.royalpalacehotel.com"
+          "website": "www.royalpalacehotel.com",
+          "url":"https://cf.bstatic.com/xdata/images/hotel/max1280x900/25002109.jpg?k=5afe65628803a3571072954bcbac84427f6fab895858105f8a6586d2d2f37d83&o=&hp=1"
         }
       },
       {
@@ -24,7 +36,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@tajmahalpalace.com",
-          "website": "www.tajmahalpalace.com"
+          "website": "www.tajmahalpalace.com",
+          "url": hotel10
         }
       },
       {
@@ -37,7 +50,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@jungleretreat.com",
-          "website": "www.jungleretreat.com"
+          "website": "www.jungleretreat.com",
+          "url": hotel11
         }
       },
       {
@@ -50,7 +64,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@gangesviewresort.com",
-          "website": "www.gangesviewresort.com"
+          "website": "www.gangesviewresort.com",
+          "url": hotel12
         }
       },
       {
@@ -63,7 +78,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@goabeachhaven.com",
-          "website": "www.goabeachhaven.com"
+          "website": "www.goabeachhaven.com",
+          "url": hotel13
         }
       },
       {
@@ -76,7 +92,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@himalayanretreat.com",
-          "website": "www.himalayanretreat.com"
+          "website": "www.himalayanretreat.com",
+          "url": hotel14
         }
       },
       {
@@ -89,7 +106,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@udaipurpalacehotel.com",
-          "website": "www.udaipurpalacehotel.com"
+          "website": "www.udaipurpalacehotel.com",
+          "url": hotel15
         }
       },
       {
@@ -102,7 +120,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@keralabackwaterretreat.com",
-          "website": "www.keralabackwaterretreat.com"
+          "website": "www.keralabackwaterretreat.com",
+          "url": hotel16
         }
       },
       {
@@ -115,7 +134,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@jaipurheritageinn.com",
-          "website": "www.jaipurheritageinn.com"
+          "website": "www.jaipurheritageinn.com",
+          "url": hotel17
         }
       },
       {
@@ -128,7 +148,8 @@ const hotelsData = [
         "contact_info": {
           "phone": "+91-XXX-XXXXXXX",
           "email": "info@punebusinesstower.com",
-          "website": "www.punebusinesstower.com"
+          "website": "www.punebusinesstower.com",
+          "url": hotel18
         }
       }
 ];
@@ -158,7 +179,7 @@ function Hotel() {
           value={searchTerm}
           onChange={handleChange}
         />
-        <i className="fas fa-search"></i> {/* You can replace this with your preferred search icon */}
+        <i className="fas fa-search"></i>
       </div>
       <div className="hotel-list">
         {searchResults.map((hotel, index) => (

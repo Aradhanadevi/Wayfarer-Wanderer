@@ -1,0 +1,16 @@
+.customer-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .customer-row {
+    display: flex;
+    border-bottom: 1px solid #ccc; /* Border between rows */
+  }
+  
+  .customer-cell {
+    padding: 8px;
+    border-right: 1px solid #ccc; /* Border between cells */
+    flex: 1;
+  }
+  
